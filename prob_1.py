@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 #Statement of the problem
 '''
@@ -6,6 +7,8 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 Find the sum of all the multiples of 3 or 5 below 1000.
 '''
 
+=======
+>>>>>>> c46660a077a0022630aa1d64f535b09ba4d889be
 #import modules
 
 import numpy as np
