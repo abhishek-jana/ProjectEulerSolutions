@@ -14,7 +14,7 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 import numpy as np
 
 # define function
-def fibonacci_sum(end,mode):
+def fibonacci_sum(end,mode = "even"):
     """
     This function will calculate the sum of all the even/odd numbers in the Fibonacci series
 
@@ -50,6 +50,6 @@ def fibonacci_sum(end,mode):
 
 
 if __name__ == "__main__":
-    print (f'Sum is = {fibonacci_sum(end = 4000000,mode = "even")}')
+    print (f'Sum is = {fibonacci_sum(end = 4000000)}')
 
  
