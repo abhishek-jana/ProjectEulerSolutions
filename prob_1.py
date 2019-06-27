@@ -1,4 +1,4 @@
-#import nodules
+#import modules
 
 import numpy as np
 
