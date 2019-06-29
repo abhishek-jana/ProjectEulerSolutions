@@ -79,10 +79,10 @@ def factor(num):
             prime = prime
     return prime
 
-#if __name__ == "__main__":
-    #print (ismaxprime(600851475143))
+if __name__ == "__main__":
+    print (ismaxprime(600851475143))
     
-print (ismaxprime(600851475143))  
+  
     
 
  
