@@ -33,14 +33,7 @@ def ismaxprime(val):
     
     #If a number is divisible between any number between 2 and the number,
     #it's not a prime number
-    arr = factor(val).reshape(-1,1) 
-    for value in reversed(arr):
-        if (isprime(value) == True ):
-            return int(value)
-        else:
-            continue
-    else:
-        print ("No prime facotor present")
+    return max(factor(val))
 
 #check for prime number
 def isprime(num):
@@ -66,23 +59,30 @@ def isprime(num):
     
 def factor(num):
     """
-    This function will generate all the foctors for a given number 
+    This function will generate all the prime foctors for a given number 
 
     Arguments:
         num -- (integer) the number for which we need the factors
     
     
     Returns:
-        out -- a list of numbers which are foctors of the input number
+        out -- a list of prime numbers which are foctors of the input number
     """
+    prime = []
     divide = np.arange(2,(np.sqrt(num)+1))
     out = num % divide
-    return np.take(divide,np.where(out==0),axis = 0)
+    out = np.take(divide,np.where(out==0)[0],axis = 0)
+    for value in reversed(out):
+        if (isprime(value) == True ):
+            prime.append(value)
+        else:
+            prime = prime
+    return prime
 
-if __name__ == "__main__":
-    print (ismaxprime(600851475143))
+#if __name__ == "__main__":
+    #print (ismaxprime(600851475143))
     
-    
+print (ismaxprime(600851475143))  
     
 
  
