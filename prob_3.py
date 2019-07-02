@@ -21,7 +21,7 @@ import numpy as np
 # define function
 def ismaxprime(val):
     """
-    This function return the maximum prime number for a given array 
+    This function returns the maximum prime number for a given array 
 
     Arguments:
         val -- (int) the number whose max prime factor is to be found 
@@ -81,6 +81,7 @@ def factor(num):
 
 if __name__ == "__main__":
     print (ismaxprime(600851475143))
+    
     
   
     
